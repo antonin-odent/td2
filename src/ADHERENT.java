@@ -1,6 +1,6 @@
 
 public class ADHERENT {
-	private int numCarte,tel,dateN;
+	private int numCarte,tel,dateN,datee;
 	private String nom,prenom,email;
 	private LIVRE liste_livre;
 	public ADHERENT(int numCarte, int tel, int dateN, String nom, String prenom, String email,LIVRE liste_livre) {
@@ -12,6 +12,7 @@ public class ADHERENT {
 		this.prenom = prenom;
 		this.email = email;
 		this.liste_livre = liste_livre;
+		
 	}
 	public int getNumCarte() {
 		return numCarte;
