@@ -1,8 +1,9 @@
+import java.util.ArrayList;
 
 public class ADHERENT {
 	private int numCarte,tel,dateN;
 	private String nom,prenom,email;
-	private LIVRE liste_livre;
+	private ArrayList<LIVRE> liste_livres;
 	public ADHERENT(int numCarte, int tel, int dateN, String nom, String prenom, String email,LIVRE liste_livre) {
 		super();
 		this.numCarte = numCarte;
@@ -11,7 +12,7 @@ public class ADHERENT {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.email = email;
-		this.liste_livre = liste_livre;
+		this.liste_livres = new ArrayList<>();;
 		
 	}
 	public int getNumCarte() {
@@ -50,13 +51,13 @@ public class ADHERENT {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public LIVRE getListe_livre() {
-		return liste_livre;
+	public ArrayList<LIVRE> getListeLivres() {
+	    return liste_livres;
 	}
-	public void setListe_livre(LIVRE liste_livre) {
-		this.liste_livre = liste_livre;
+
+	public void setListeLivres(ArrayList<LIVRE> listeLivres) {
+	    this.liste_livres = listeLivres;
 	}
-	
 	
 	
 

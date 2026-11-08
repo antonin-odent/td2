@@ -2,7 +2,7 @@
 public class LIVRE {
 	private String ISBN,titre, Auteur;
 	private int prix;
-	private ADHERENT empr;
+	private ADHERENT emprunteur;
 	private AUTEUR lauteur;
 	public LIVRE(String iSBN, String titre, String auteur, int prix,ADHERENT emprunteur,AUTEUR lauteur) {
 		super();
